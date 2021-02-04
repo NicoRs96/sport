@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.CheckBox?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="818.0" prefWidth="1167.0" style="-fx-background-color: white;" stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IscrivitiController">
+   <children>
+      <TextField fx:id="NomeTF" layoutX="120.0" layoutY="251.0" prefHeight="33.0" prefWidth="261.0" promptText="Nome" styleClass="text-field" stylesheets="@bootstrap3.css" />
+      <TextField fx:id="CognomeTF" layoutX="120.0" layoutY="310.0" prefHeight="33.0" prefWidth="261.0" promptText="Cognome" styleClass="text-field" stylesheets="@bootstrap3.css" />
+      <DatePicker fx:id="DataDP" layoutX="120.0" layoutY="361.0" prefHeight="31.0" prefWidth="261.0" promptText="Data di nascita" styleClass="date-picker" stylesheets="@bootstrap3.css" />
+      <TextField fx:id="TelefonoTF" layoutX="120.0" layoutY="417.0" prefHeight="33.0" prefWidth="261.0" promptText="Telefono" styleClass="text-field" stylesheets="@bootstrap3.css" />
+      <TextField fx:id="MailTF" layoutX="120.0" layoutY="469.0" prefHeight="33.0" prefWidth="261.0" promptText="email" styleClass="text-field" stylesheets="@bootstrap3.css" />
+      <TextField fx:id="PWTF" layoutX="120.0" layoutY="524.0" prefHeight="33.0" prefWidth="261.0" promptText="password" styleClass="text-field" stylesheets="@bootstrap3.css" />
+      <Button fx:id="ConfermaBTN" layoutX="150.0" layoutY="639.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="202.0" stylesheets="@bootstrap3.css" text="CONFERMA" onAction="#confermaRegistrazione">
+         <styleClass>
+            <String fx:value="action-btn" />
+            <String fx:value="info" />
+         </styleClass>
+      </Button>
+      <CheckBox fx:id="RentCB" layoutX="120" layoutY="580.0" styleClass="check-box" stylesheets="bootstrap3.css" text="RENT"></CheckBox>
+      <Text fx:id="name" fill="#ff0d00" layoutX="204.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPORT CHALLENGE ONLINE" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="64.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="461.0" fitWidth="360.0" layoutX="648.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mascotte.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="indietroButton" layoutX="26.0" layoutY="37.0" mnemonicParsing="false" onAction="#indietro" stylesheets="@bootstrap3.css" text="INDIETRO">
+         <styleClass>
+            <String fx:value="action-btn" />
+            <String fx:value="warning" />
+         </styleClass>
+      </Button>
+      <TextArea layoutX="120.0" layoutY="707.0" opacity="0.5" prefHeight="43.0" prefWidth="261.0" />
+   </children>
+</Pane>

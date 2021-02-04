@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="818.0" prefWidth="1167.0" styleClass="pane" stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <PasswordField fx:id="pwTF" layoutX="439.0" layoutY="422.0" prefHeight="31.0" prefWidth="303.0" promptText="Password" styleClass="text-field" stylesheets="@bootstrap3.css" />
+      <TextField fx:id="EmailTF" layoutX="439.0" layoutY="381.0" prefHeight="31.0" prefWidth="303.0" promptText="Email" styleClass="text-field" stylesheets="@bootstrap3.css" />
+      <Button fx:id="iscrivitiBTN" layoutX="498.0" layoutY="566.0" mnemonicParsing="false" onAction="#iscriviti" prefHeight="44.0" prefWidth="181.0" styleClass="primary" stylesheets="@bootstrap3.css" text="ISCRIVITI" />
+      <Button fx:id="LoginBtn" alignment="CENTER" layoutX="437.0" layoutY="492.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="303.0" stylesheets="@bootstrap3.css" text="LOGIN" onAction="#login">
+         <styleClass>
+            <String fx:value="info" />
+            <String fx:value="action-btn" />
+         </styleClass>
+      </Button>
+      <Text fx:id="name" fill="#ff0d00" layoutX="195.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPORT CHALLENGE ONLINE" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="64.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
